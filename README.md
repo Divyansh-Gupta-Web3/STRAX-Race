@@ -41,7 +41,7 @@ python manage.py runserver
 ```
 
 ## Executing the Game
-After you are done installing and setting up. Go to [] folder and click on index.html.
+After you are done installing and setting up. Go to UNITY/The Strax Race folder and click on index.html.
 
 After which you will presented with the following
 ![game1](images/Game1.png)
