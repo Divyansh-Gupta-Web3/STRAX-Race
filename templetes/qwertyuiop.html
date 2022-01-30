@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>STRATIS WALLET</title>
+  <style>
+    body{
+      padding: 18%;
+    }
+    input{
+      height: 1.2cm;
+      width: 8cm;
+      background-color: rgb(36, 226, 226);
+      color: white;
+      border: hidden;
+      border-radius: 15px;
+      font-size: 1.4rem;
+      font-weight: 800;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+<h1>
+  Your winning amount is sent to your wallet.
+</h1>
+<form method="POST" action="">
+    {% csrf_token %}
+  <a href="/login">
+  <input type="button" value="Go Back to Wallet">
+</a>
+</form>
+</body>
+</html>

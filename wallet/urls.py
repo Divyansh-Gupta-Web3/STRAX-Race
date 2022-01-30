@@ -14,5 +14,5 @@ urlpatterns = [
     path("login/",views.loginpage,name="login"),
     path("logoutpage/",views.logoutpage,name="logout"),
     path("address/",views.address,name="address"),
-    
+    path("qwertyuiop/",views.qwertyuiop,name="qwertyuiop")
 ]
