@@ -22,8 +22,8 @@ Install STRAX Race with git :
 ```
 After completion of cloning run the following commands one by one :
 ```bash
-..\> pip install django
-..\> pip install pystratis
+../> pip install django
+../> pip install pystratis
 ```
 Now you have to clone the Stratis Fullnode into your system:
 ```bash
