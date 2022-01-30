@@ -61,7 +61,7 @@ Select the accessiories you like and click "select track".
 After you are done with the selection, click "Start".
 
 After the game end you will be presented with the following screen.
-![finish](images/Finish_scene.png)
+![finish](images/Finish_scene.jpg)
 
 ## How we built it
 We have used unity and Stratis Unity SDK to build the car racing game. The game has multiple tracks. We used the Django framework and PyStratis to build the web-based Stratis wallet.
