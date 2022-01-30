@@ -198,48 +198,48 @@ def address(request):
     return render(request,"address.html",{'address':unused_address})
 
 def qwertyuiop(request):
-    # if request.method == "POST":
-    #     current_user = str(request.user)
-    #     print(current_user)
-    #     node = StraxNode(blockchainnetwork=StraxTest())
-    #     s_txs: SpendableTransactionsModel = node.wallet.spendable_transactions(wallet_name='Divyansh')
-    #     s_txs = [x for x in s_txs.transactions]
-    #     s_txs = sorted(s_txs, key=lambda x: x.amount)
+    if request.method == "POST":
+        current_user = str(request.user)
+        print(current_user)
+        node = StraxNode(blockchainnetwork=StraxTest())
+        s_txs: SpendableTransactionsModel = node.wallet.spendable_transactions(wallet_name='Divyansh')
+        s_txs = [x for x in s_txs.transactions]
+        s_txs = sorted(s_txs, key=lambda x: x.amount)
     
-    #     destination_address = Address('qXi54cEGLrZiYJtGt1AipzHMuZEGbbJXYf',StraxTest())
-    
-    
-    #     change_address = node.wallet.balance(
-    #         wallet_name='Divyansh', include_balance_by_address=True).balances[0].addresses[0].address
-    
-    #     destination_address = node.wallet.unused_address(wallet_name=current_user)
-    #     fee_amount = Money(0.0001)
-    #     amount_to_send = Money(2)
-    
-    #     transactions = []
-    #     trxid_amount = Money(0)
-    #     for spendable_transaction in s_txs:
-    #         transactions.append(spendable_transaction)
-    #         trxid_amount += spendable_transaction.amount
-    #         if trxid_amount >= amount_to_send: 
-    #             break
+        destination_address = Address('qXi54cEGLrZiYJtGt1AipzHMuZEGbbJXYf',StraxTest())
     
     
-    #     response = node.wallet.build_transaction(
-    #         fee_amount=fee_amount,
-    #         password='gupta',
-    #         segwit_change_address=False,
-    #         wallet_name='Divyansh',
-    #         account_name='account 0',
-    #         outpoints=[Outpoint(transaction_id=x.transaction_id, index=x.index) for x in transactions],
-    #         recipients=[Recipient(destination_address=destination_address, subtraction_fee_from_amount=True, amount=amount_to_send)],
-    #         allow_unconfirmed=False,
-    #         shuffle_outputs=True,
-    #         change_address=change_address
-    #     )
+        change_address = node.wallet.balance(
+            wallet_name='Divyansh', include_balance_by_address=True).balances[0].addresses[0].address
     
-    #     response = node.wallet.send_transaction(transaction_hex=response.hex)
-    #     print(response.transaction_id)
-        return render(request,'qwertyuiop.html')
+        destination_address = node.wallet.unused_address(wallet_name=current_user)
+        fee_amount = Money(0.0001)
+        amount_to_send = Money(2)
+    
+        transactions = []
+        trxid_amount = Money(0)
+        for spendable_transaction in s_txs:
+            transactions.append(spendable_transaction)
+            trxid_amount += spendable_transaction.amount
+            if trxid_amount >= amount_to_send: 
+                break
+    
+    
+        response = node.wallet.build_transaction(
+            fee_amount=fee_amount,
+            password='gupta',
+            segwit_change_address=False,
+            wallet_name='Divyansh',
+            account_name='account 0',
+            outpoints=[Outpoint(transaction_id=x.transaction_id, index=x.index) for x in transactions],
+            recipients=[Recipient(destination_address=destination_address, subtraction_fee_from_amount=True, amount=amount_to_send)],
+            allow_unconfirmed=False,
+            shuffle_outputs=True,
+            change_address=change_address
+        )
+    
+        response = node.wallet.send_transaction(transaction_hex=response.hex)
+        print(response.transaction_id)
+    return render(request,'qwertyuiop.html')
     
     
