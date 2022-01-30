@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+        <link rel="shortcut icon" type="image/jpg" href="/static/images/wallet.jpg"/>
+        <title>
+                STRATIS  WALLET
+        </title>
+
+        <meta content="summary_large_image" name="twitter:card"/>
+        <meta content="website" property="og:type"/>
+        <meta content="" property="og:description"/>
+        <meta content="https://2458ib3cbj.preview-posted-stuff.com/V2-TER4-umdw-4gZs-VB2T/" property="og:url"/>
+        <meta content="https://pro-bee-beepro-thumbnails.s3.amazonaws.com/messages/730899/713960/1404842/6870908_large.jpg" property="og:image"/>
+        <meta content="" property="og:title"/>
+        <meta content="" name="description"/>
+        <meta charset="utf-8"/>
+        <meta content="width=device-width" name="viewport"/>
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css"/>
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css"/>
+        <link href="https:/fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/static/CSS/style.css">
+       
+        <script src="/static/JS/script.js"></script>
+  </head>
+  <body>
+    <dv class="bee-page-container">
+      <div class="bee-row bee-row-1">
+        <div class="bee-row-content no_stack">
+          <div id="img1">
+            <img src="/static/images/wallet.jpg" alt="" />
+          </div>
+          <div class="bee-col bee-col-1 bee-col-w4">
+            <div class="bee-block bee-block-1 bee-heading">
+              <a style="text-decoration: none" href="#">
+                <h1
+                id="heading"
+                  style="
+                  
+                    color: #33aad8;
+                    direction: ltr;
+                    font-family: 'Oswald', Arial, 'Helvetica Neue', Helvetica,
+                      sans-serif;
+                    font-size: 37px;
+                    font-weight: normal;
+                    letter-spacing: 12px;
+                    line-height: 126%;
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                  "
+                >
+                  STRATIS WALLET
+                </h1>
+              </a>
+            </div>
+          </div>
+          <div class="bee-col bee-col-2 bee-col-w8">
+            <div class="bee-block bee-block-1 bee-menu">
+              <nav class="bee-menu">
+                <input
+                  class="bee-hamburger-trigger"
+                  id="bee-hamburger-mzt16ua"
+                  type="checkbox"
+                />
+                <label
+                  class="bee-hamburger-controls"
+                  for="bee-hamburger-mzt16ua"
+                >
+                  <span class="bee-hamburger-open"> </span>
+                  <span class="bee-hamburger-close"> </span>
+                </label>
+                <ul class="bee-vertical with-bee-hamburger">
+                  <a style="color: red; text-decoration: none;" href="/main" target="_self" title="">
+                    <li>MY WALLET</li>
+                  </a>
+                  <a style="text-decoration: none;" href="/profile" target="_self" title="">
+                    <li>PROFILE</li>
+                  </a>
+                  <a style="text-decoration: none;" href="/oldTxns" target="_self" title="">
+                    <li>TRANSACTIONS</li>
+                  </a>
+                  <a style="text-decoration: none;" href="/newTxn" target="_self">
+                    <li>SEND STRAX</li>
+                  </a>
+                 
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+<a style="    width: 10vw;    position: relative;    float: right;    right: 1cm;    top: -2.5cm;" href="{% url 'logout' %}"
+class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-log-out"></span>LOGOUT
+      </a>
+<div class="bee-row bee-row-2">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:15px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-3">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:30px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-4">
+<div style="position:relative;bottom: 2cm; background-color: #00000000;" class="bee-row-content reverse">
+<div class="bee-col bee-col-1 bee-col-w6">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style=" width: 50vw; color:#33aad8;font-family:'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:50px;font-weight:normal;letter-spacing:6px;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
+       WALLET BALANCE : {{ bal }}
+       </h1>
+       <h4 style="width: 50vw; color:#33aad8;font-family:'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:20px;font-weight:normal;letter-spacing:6px;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;" >
+        Unconfirmed Balance: {{ UncBal }}</h4>
+</div>
+<BR ></BR>
+<div class="bee-block bee-block-2 bee-text">
+<div class="bee-text-content" style="font-size: 12px; line-height: 180%; text-align: left; color: #393d47; font-family: inherit;">
+<em >
+<span id="add" style=" font-size: 20px; line-height: 27px;">WALLET ADDRESS:  {{ add }}</span>
+         <input style="position: relative;" id="copyBtn" type="button" onclick="copyFun()" value="Copy to Clipboard">
+         <div>
+          <!-- <button id="QRbtn" class="qr-btn" onclick="">Genarate QR Code</button> -->
+      </div>
+      <br/>
+      <input 
+  	style="display: none;"
+    type="button" 
+    spellcheck="false"
+    id="text"
+    value="Some Error Occured, Try again."
+  />
+  <div style="position: relative; left: 8cm;" id="qrcode"></div>
+      
+</em>
+<p style="font-size: 15px; line-height: 27px;">
+         
+        </p>
+</div>
+</div>
+<div id="btn1" >
+<a class="bee-button-content" href="/newTxn"
+    style="position: relative;
+    top: -9cm;
+    left: 25.5cm; border-radius: 20PX; font-size: 12px; line-height: 24px; font-family: 'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif; background-color: #33aad8; border-bottom: 0px solid #8a3b8f; border-left: 0px solid #8a3b8f; border-radius: 40px; border-right: 0px solid #8a3b8f; border-top: 0px solid #8a3b8f; color: #ffffff; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; display: inline-block;">
+    <span style="border-radius: 20PX; font-size: 16px; line-height: 200%; word-break: break-word;">
+        <span style="font-size: 22px; line-height: 44px;">
+            SEND STRAX
+        </span>
+    </span></a>
+<a class="bee-button-content" onclick="straxFun()"
+    style="position: relative;
+     top: -9cm;
+    left: 15.5cm; border-radius: 20PX; font-size: 12px; line-height: 24px; font-family: 'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif; background-color: #33aad8; border-bottom: 0px solid #8a3b8f; border-left: 0px solid #8a3b8f; border-radius: 40px; border-right: 0px solid #8a3b8f; border-top: 0px solid #8a3b8f; color: #ffffff; max-width: 100%; padding-bottom: 5px; padding-left: 20px; padding-right: 20px; padding-top: 5px; width: auto; display: inline-block;">
+    <span style="font-size: 16px; line-height: 200%; word-break: break-word;">
+        <span style="font-size: 22px; line-height: 44px;">
+            BUY STRAX
+             </span>
+    </span></a>
+</div>
+</div>
+</div>
+
+<p style="position: fixed;left: 14.5cm;top: 648px;" id="footer">
+  <b>
+    POWERED BY STRATIS BLOCKCHAIN SOLUTIONS
+  </b>  
+  </p>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<script type="text/javascript">
+document.getElementById("text").value=document.getElementById("add").innerHTML;
+const qrcode = document.getElementById("qrcode");
+const textInput = document.getElementById("text"); 
+const qr = new QRCode(qrcode);
+qr.makeCode(textInput.value.trim());
+textInput.onload = (e) => {
+  qr.makeCode(e.target.value.trim());
+};
+console.log(document.getElementById("text").value);
+</script>
+</body>      
+</html>

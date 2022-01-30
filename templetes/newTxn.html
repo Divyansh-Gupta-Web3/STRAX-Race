@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        <link rel="shortcut icon" type="image/jpg" href="/static/images/wallet.jpg"/>
+        
+<title>
+	STRATIS  WALLET
+</title>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="website" property="og:type"/>
+<meta content="" property="og:description"/>
+<meta content="https://2458ib3cbj.preview-posted-stuff.com/V2-TER4-umdw-4gZs-VB2T/" property="og:url"/>
+<meta content="https://pro-bee-beepro-thumbnails.s3.amazonaws.com/messages/730899/713960/1404842/6870908_large.jpg" property="og:image"/>
+<meta content="" property="og:title"/>
+<meta content="" name="description"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width" name="viewport"/>
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" type="text/css"/>
+<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet" type="text/css"/>
+<link href="https:/fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="/static/CSS/style.css">
+<script src="/static/JS/script.js"></script>
+<style>
+.newTxnDetails{
+  border: 1px solid rgb(43, 230, 236);
+  height: 30px;
+  width: 300px;
+  position: relative;
+  top: 5cm;
+  right: 16cm;
+  border-radius: 20px;
+  font-size: 1.5rem;
+}</style>
+</head>
+<body>
+      
+<div class="bee-page-container">
+<div class="bee-row bee-row-1">
+<div style="  position: relative;
+bottom: 1cm; right: 3cm;" class="bee-row-content no_stack">
+        <div id="img1">
+                <img src="/static/images/wallet.jpg" alt="">
+              </div>
+<div class="bee-col bee-col-1 bee-col-w4">
+<div class="bee-block bee-block-1 bee-heading">
+	<a style="text-decoration: none;" href="#">
+
+		<h1 
+                style="color:#33aad8;
+              
+                direction:ltr;
+                font-family:'Oswald', Arial, 
+                'Helvetica Neue', 
+                Helvetica, sans-serif;
+                font-size:37px;
+                font-weight:normal;
+                letter-spacing:12px;
+                line-height:95%;
+                text-align:center;
+                margin-top:0;
+                margin-bottom:0;">
+			STRATIS WALLET
+		</h1>
+	</a>
+</div>
+</div>
+<div class="bee-col bee-col-2 bee-col-w8">
+  <div class="bee-block bee-block-1 bee-menu">
+    <nav class="bee-menu">
+      <input
+        class="bee-hamburger-trigger"
+        id="bee-hamburger-mzt16ua"
+        type="checkbox"
+      />
+      <label
+        class="bee-hamburger-controls"
+        for="bee-hamburger-mzt16ua"
+      >
+        <span class="bee-hamburger-open"> </span>
+        <span class="bee-hamburger-close"> </span>
+      </label>
+      <ul class="bee-vertical with-bee-hamburger">
+        <a style=" text-decoration: none;" href="/main" target="_self" title="">
+          <li>MY WALLET</li>
+        </a>
+        <a style="text-decoration: none;" href="/profile" target="_self" title="">
+          <li>PROFILE</li>
+        </a>
+        <a style="text-decoration: none;" href="/oldTxns" target="_self" title="">
+          <li>TRANSACTIONS</li>
+        </a>
+        <a style="color: red; text-decoration: none;" href="/newTxn" target="_self">
+          <li>SEND STRAX</li>
+        </a>
+       
+      </ul>
+    </nav>
+  </div>
+</div>
+</div>
+</div>  
+<a style="    width: 10vw;    position: relative;    float: right;    right: 1cm;    top: -2.5cm;" href= "{% url 'logout' %}"
+class="btn btn-info btn-lg">
+        <span class="glyphicon glyphicon-log-out"></span> Log out
+      </a>
+<div class="bee-row bee-row-2">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:15px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="bee-row bee-row-3">
+<div class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w12">
+<div class="bee-block bee-block-1 bee-divider">
+<div class="spacer" style="height:30px;">
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="position: relative; bottom: 2cm;" class="bee-row bee-row-4">
+<div style="background-color: #00000000;" class="bee-row-content">
+<div class="bee-col bee-col-1 bee-col-w6">
+<div class="bee-block bee-block-1 bee-heading">
+<h1 style="width: 50vw; color:#33aad8;font-family:'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:50px;font-weight:normal;letter-spacing:6px;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;">
+       WALLET BALANCE : {{ bal }}
+       </h1>
+       <h4 style="width: 50vw; color:#33aad8;font-family:'Oswald', Arial, 'Helvetica Neue', Helvetica, sans-serif;font-size:20px;font-weight:normal;letter-spacing:6px;line-height:120%;text-align:left;margin-top:0;margin-bottom:0;" >
+        Unconfirmed Balance: {{ UncBal }}</h4>
+</div>
+</div>
+<BR ></BR>
+<div >
+<div  style="width: 6cm; font-size: 12px; line-height: 1; text-align: left; color: #393d47; font-family: inherit;">
+<em >
+        <br>
+<span id="add" class="bee-row bee-row-5" style="width: 100%;  font-size: 20px; line-height: 27px;">WALLET ADDRESS:  {{ add }}</span>
+
+</div>
+</div>
+<form method="POST" action="">
+  {% csrf_token %}
+<div style="position: inherit;bottom: 2cm; width: 6cm; height: 50vh;" >
+        <input disabled type="text" name="add" id="" class="newTxnDetails" value="qXi54cEGLrZiYJtGt1AipzHMuZEGbbJXYf" placeholder="Enter Destination Address"><br>
+        <input disabled type="text" name="amount" id="" class="newTxnDetails" placeholder="Enter Amount(in STRAX)" value="1"><br>
+        <!-- <input type="text" name="name" id="" class="newTxnDetails" placeholder="Enter your username"><br> -->
+        <input type="password" name="pas" id="" class="newTxnDetails" placeholder="Enter your password"><br>
+        <!-- <input type="text" name="uradd" id="" class="newTxnDetails" placeholder="Enter your wallet Address"> -->
+        
+        <a style="text-decoration: none; position: relative; left: -13.5cm; top: 5cm;" id="submitBtn" href="/main">
+
+          <input onclick="txn()" style="height:7vh; width: 50%; cursor: pointer; border: hidden; background-color: rgb(115, 214, 16);" value="Send" type="Submit" >
+          <script>
+            function txn() {
+              alert("Your Transaction is succesfully Completed !!!  "+"\n"+"Press OK to Continue ");
+              window.open("https://www.google.com");
+              
+            }
+            </script>
+        </input>
+      </a>
+      <br>
+        <div id="txn" style="display: none;">
+          <p> Transaction succesfull with TxnID:  {{Txid}} </p>
+          <button onclick="">
+          </button>
+        </div>
+      <p style="position: fixed;
+      left: 17cm;
+      top: 20cm;" id="footer">
+        <b>
+          POWERED BY STRATIS BLOCKCHAIN SOLUTIONS
+        </b>  
+        </p>
+        </form>
+        </div>
+      </body>
+</html>

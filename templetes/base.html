@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QR Code Generator</title>
+  <style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body {
+      width: 80%;
+      height: 100vh;
+      margin: auto;
+      display: grid;
+      place-items: center;
+  }
+  
+  h1 {
+      font-family: sans-serif;
+  }
+  
+  input {
+      padding: 10px;
+      border-radius: 20px;
+      border: 2px solid steelblue;
+      font-size: 1.5rem;
+      letter-spacing: 2px;
+      outline: none;
+	  display: none;
+  }
+  </style>
+   
+	
+	</script>
+</head>
+<body>
+  <h1>QR Code Generator</h1>
+ <span id="add">
+	 Wallet ID: shgfhdsavjdsbvhjdsbv
+ </span>
+  <input 
+  	style="display: none;"
+    type="button" 
+    spellcheck="false"
+    id="text"
+    value="https://google"
+  />
+  <div id="qrcode"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+  <script type="text/javascript">
+document.getElementById("text").value=document.getElementById("add").innerHTML;
+  const qrcode = document.getElementById("qrcode");
+  const textInput = document.getElementById("text"); 
+  const qr = new QRCode(qrcode);
+  qr.makeCode(textInput.value.trim());
+  textInput.onclick = (e) => {
+	qr.makeCode(e.target.value.trim());
+  };
+  </script>
+</body>
+</html>
