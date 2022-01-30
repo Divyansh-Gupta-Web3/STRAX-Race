@@ -53,14 +53,15 @@ If you have not created a account, you can
 ![signup](images/Signup.png)
 
 After making the payment of the entry fees you are all set to enter the game.
-![menu](images/menu scene.png)
+![game](images/game_scene.jpg)
 
 Select the accessiories you like and click "select track".
+![menu](images/menu_scene.jpg)
 
 After you are done with the selection, click "Start".
 
 After the game end you will be presented with the following screen.
-![finish](images/Finish scene.png)
+![finish](images/Finish_scene.png)
 
 ## How we built it
 We have used unity and Stratis Unity SDK to build the car racing game. The game has multiple tracks. We used the Django framework and PyStratis to build the web-based Stratis wallet.
