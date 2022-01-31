@@ -57,14 +57,14 @@ Click on Wallet and then "Link Wallet". You will be directed to the web-based wa
 If you have not created a account, you can 
 ![signup](images/Signup.png)
 
-After yyou login you will be taken to the wallet dashboard
+After you login you will be taken to the wallet dashboard
 ![dashboard](images/Dashbaord.png)
 
 You need to make a paymnet of 1 STRAX, click on "Send Strax".
 ![send](images/Send.png)
 
 You can find your details under "Profile".
-![profile](images/wallet_balance.png)
+![profile](images/Wallet_Balance.png)
 
 After making the payment of the entry fees you are all set to enter the game.
 ![game](images/game_scene.jpg)
