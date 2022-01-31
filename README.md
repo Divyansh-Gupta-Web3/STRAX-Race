@@ -39,9 +39,11 @@ Now leaving this cmd window just like that, move again to the root directory whe
 ```bash
 python manage.py runserver
 ```
-## You can also check our Database using http://127.0.0.1:8000/admin This LINk 
-              Username : wallet
-              Password : wallet
+You can also check our Database using http://127.0.0.1:8000/admin.
+Username : wallet
+Password : wallet
+
+**Note:** To play the game you need to have some STRAX in your wallet.
 
 ## Executing the Game
 After you are done installing and setting up. Go to UNITY/The Strax Race folder and click on index.html.
